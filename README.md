@@ -18,8 +18,12 @@
 
 СОХРАНИТЕ ЭТУ ПАПКУ ДЛЯ БУДУЩИХ ПЕРЕУСТАНОВОК!
 
+Фирмвары для Wi-Fi модуля Broadcom BCM4364 в Mac Mini/MacBook
+
+## Установка
+
 # 1. Скачать прошивку
-wget https://github.com/NoaHimesaka1873/apple-bcm-firmware/releases/download/v14.0/apple-bcm-firmware-14.0-1-any.pkg.tar.zst
+git clone https://github.com/FrantsevIU/apple-bcm-firmware
 
 # 2. Распаковать
 tar --use-compress-program=unzstd -xvf apple-bcm-firmware-14.0-1-any.pkg.tar.zst
