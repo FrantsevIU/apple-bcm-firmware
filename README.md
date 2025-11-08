@@ -17,3 +17,18 @@
 - и другие файлы из apple-bcm-firmware
 
 СОХРАНИТЕ ЭТУ ПАПКУ ДЛЯ БУДУЩИХ ПЕРЕУСТАНОВОК!
+
+# 1. Скачать прошивку
+wget https://github.com/NoaHimesaka1873/apple-bcm-firmware/releases/download/v14.0/apple-bcm-firmware-14.0-1-any.pkg.tar.zst
+
+# 2. Распаковать
+tar --use-compress-program=unzstd -xvf apple-bcm-firmware-14.0-1-any.pkg.tar.zst
+
+# 3. Установить
+sudo cp -r usr/lib/firmware/brcm/* /lib/firmware/brcm/
+
+# 4. Перезагрузить
+sudo reboot
+
+# 5. Подключиться к Wi-Fi
+sudo nmcli --ask dev wifi connect "SSID_СЕТИ"
